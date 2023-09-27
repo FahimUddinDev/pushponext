@@ -1,0 +1,20 @@
+.faq-wrapper .faq-item .faq-body {
+  display: none;
+  animation: tabFade 0.5s;
+}
+
+.faq-wrapper .faq-item.active .faq-body {
+  display: block;
+}
+
+.faq-wrapper .faq-item:focus-within .faq-body {
+  display: block;
+}
+@keyframes tabFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
